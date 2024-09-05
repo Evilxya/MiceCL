@@ -1,0 +1,1 @@
+Download MisNet model weights from https://drive.google.com/file/d/1g4asL3-lAuTUMPfMP98RMGXRVQoKVRc5/view?usp=sharing.

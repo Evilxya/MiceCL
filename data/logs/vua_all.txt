@@ -1,0 +1,134 @@
+DATA:
+  data_dir: ./data
+  max_left_len: 135
+  max_right_len: 90
+  plm: ./roberta-base
+  sep_puncs: [',', ' ,', '?', ' ?', ';', ' ;', '.', ' .', '!', ' !', '</s>', '[SEP]']
+  use_context: True
+  use_eg_sent: True
+  use_ex: True
+  use_pos: False
+  use_sim: True
+MODEL:
+  dropout: 0.2
+  embed_dim: 768
+  first_last_avg: True
+  num_classes: 2
+  num_heads: 12
+TRAIN:
+  class_weight: 5
+  lr: 1e-05
+  output: ./data/logs
+  train_batch_size: 64
+  train_epochs: 10
+  val_batch_size: 64
+cl: True
+eval_mode: False
+gpu: 0
+log: vua_all
+seed: 4
+10000 sentences have been processed.
+20000 sentences have been processed.
+30000 sentences have been processed.
+40000 sentences have been processed.
+50000 sentences have been processed.
+60000 sentences have been processed.
+70000 sentences have been processed.
+80000 sentences have been processed.
+90000 sentences have been processed.
+100000 sentences have been processed.
+110000 sentences have been processed.
+./data\VUA_All/train.csv finished.
+10000 sentences have been processed.
+20000 sentences have been processed.
+30000 sentences have been processed.
+./data\VUA_All/val.csv finished.
+10000 sentences have been processed.
+20000 sentences have been processed.
+30000 sentences have been processed.
+40000 sentences have been processed.
+50000 sentences have been processed.
+./data\VUA_All/test.csv finished.
+t 7
+===== Start training: epoch 1 =====
+816
+Timing: 426.028377532959, Epoch: 1, training loss: 388.80731128901243, current learning rate 2.9153269024651666e-06
+val loss: 454.51034007407725
+accuracy:      0.672
+precision:     0.195
+recall:        0.523
+f1:            0.284
+===== Start training: epoch 2 =====
+939
+Timing: 489.87529039382935, Epoch: 2, training loss: 254.5750834736973, current learning rate 6.270096463022508e-06
+val loss: 273.5141920670867
+accuracy:      0.897
+precision:     0.566
+recall:        0.734
+f1:            0.639
+===== Start training: epoch 3 =====
+1061
+Timing: 553.9753384590149, Epoch: 3, training loss: 69.21807454782538, current learning rate 9.984816005716327e-06
+val loss: 237.11566281877458
+accuracy:      0.900
+precision:     0.566
+recall:        0.830
+f1:            0.673
+===== Start training: epoch 4 =====
+1183
+Timing: 617.7057266235352, Epoch: 4, training loss: 13.09604615077842, current learning rate 8.928188638799571e-06
+val loss: 247.66646990779554
+accuracy:      0.920
+precision:     0.640
+recall:        0.810
+f1:            0.715
+===== Start training: epoch 5 =====
+1306
+Timing: 681.6756567955017, Epoch: 5, training loss: 7.625791084028606, current learning rate 7.761700607359773e-06
+val loss: 227.3620550510932
+accuracy:      0.934
+precision:     0.706
+recall:        0.810
+f1:            0.754
+===== Start training: epoch 6 =====
+1428
+Timing: 745.4280707836151, Epoch: 6, training loss: 6.049347076585036, current learning rate 6.486245087531262e-06
+val loss: 224.46136841310545
+accuracy:      0.945
+precision:     0.779
+recall:        0.775
+f1:            0.777
+===== Start training: epoch 7 =====
+1550
+Timing: 809.1412487030029, Epoch: 7, training loss: 7.629575467968152, current learning rate 5.101822079314042e-06
+val loss: 229.84419482163344
+accuracy:      0.950
+precision:     0.818
+recall:        0.768
+f1:            0.792
+===== Start training: epoch 8 =====
+1632
+Timing: 851.9421892166138, Epoch: 8, training loss: 9.746983590949185, current learning rate 3.644158628081458e-06
+val loss: 240.88593068138425
+accuracy:      0.949
+precision:     0.808
+recall:        0.772
+f1:            0.789
+===== Start training: epoch 9 =====
+1632
+Timing: 852.1562674045563, Epoch: 9, training loss: 5.33182815727082, current learning rate 2.186495176848875e-06
+val loss: 269.05641320460063
+accuracy:      0.949
+precision:     0.810
+recall:        0.769
+f1:            0.789
+===== Start training: epoch 10 =====
+1632
+Timing: 852.0132961273193, Epoch: 10, training loss: 4.216241943709122, current learning rate 7.288317256162916e-07
+val loss: 298.0631733730893
+accuracy:      0.948
+precision:     0.814
+recall:        0.758
+f1:            0.785
+0.7919041718298223
+[0.2841739130434783, 0.6390186101624034, 0.672987012987013, 0.7148514851485148, 0.7542157886882555, 0.77713551701991, 0.7919041718298223, 0.789219300401409, 0.788561097871641, 0.7850389782716869]

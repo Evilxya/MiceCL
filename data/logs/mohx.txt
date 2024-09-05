@@ -1,0 +1,37 @@
+DATA:
+  data_dir: ./data
+  max_left_len: 25
+  max_right_len: 70
+  plm: ./roberta-base
+  sep_puncs: [',', ' ,', '?', ' ?', ';', ' ;', '.', ' .', '!', ' !', '</s>', '[SEP]']
+  use_context: True
+  use_eg_sent: True
+  use_out: True
+  use_pos: False
+  use_sim: True
+MODEL:
+  dropout: 0.2
+  embed_dim: 768
+  first_last_avg: False
+  num_classes: 2
+  num_heads: 12
+TRAIN:
+  class_weight: 1
+  lr: 1e-05
+  output: ./data/logs
+  train_batch_size: 16
+  train_epochs: 7
+  val_batch_size: 32
+cl: True
+eval_mode: True
+gpu: 0
+log: mohx
+seed: 4
+./data\MOH-X/MOH-X.csv finished.
+Evaluate only
+-------test-------
+val loss: 53.096382796764374
+accuracy:      0.770
+precision:     0.740
+recall:        0.813
+f1:            0.775

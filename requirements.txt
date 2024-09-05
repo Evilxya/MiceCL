@@ -1,0 +1,13 @@
+boto3==1.16.63
+nltk==3.5
+numpy
+pandas
+matplotlib
+requests==2.25.1
+scikit-learn==0.24.1
+scipy==1.6.0
+torch
+torchvision
+tqdm==4.56.0
+transformers==4.2
+yacs

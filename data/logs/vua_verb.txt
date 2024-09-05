@@ -1,0 +1,83 @@
+DATA:
+  data_dir: ./data
+  max_left_len: 140
+  max_right_len: 60
+  plm: ./roberta-base
+  sep_puncs: [',', ' ,', '?', ' ?', ';', ' ;', '.', ' .', '!', ' !', '</s>', '[SEP]']
+  use_context: True
+  use_eg_sent: True
+  use_ex: True
+  use_pos: False
+  use_sim: True
+MODEL:
+  dropout: 0.2
+  embed_dim: 768
+  first_last_avg: True
+  num_classes: 2
+  num_heads: 12
+TRAIN:
+  class_weight: 4
+  lr: 1e-05
+  output: ./data/logs
+  train_batch_size: 64
+  train_epochs: 7
+  val_batch_size: 32
+cl: True
+eval_mode: False
+gpu: 0
+log: vua_verb
+seed: 6
+10000 sentences have been processed.
+./data\VUA_Verb/train.csv finished.
+./data\VUA_Verb/val.csv finished.
+./data\VUA_Verb/test.csv finished.
+t 2
+===== Start training: epoch 1 =====
+Timing: 48.243929386138916, Epoch: 1, training loss: 33.22599201835692, current learning rate 4.1295546558704455e-06
+val loss: 95.61144023668021
+accuracy:      0.851
+precision:     0.741
+recall:        0.772
+f1:            0.756
+===== Start training: epoch 2 =====
+Timing: 58.85193753242493, Epoch: 2, training loss: 1.4104257744038478, current learning rate 9.149797570850203e-06
+val loss: 149.9251515310607
+accuracy:      0.851
+precision:     0.748
+recall:        0.757
+f1:            0.752
+===== Start training: epoch 3 =====
+Timing: 69.41595387458801, Epoch: 3, training loss: 0.9683434323524125, current learning rate 8.744939271255063e-06
+val loss: 172.97989183085156
+accuracy:      0.856
+precision:     0.772
+recall:        0.737
+f1:            0.754
+===== Start training: epoch 4 =====
+Timing: 79.92889213562012, Epoch: 4, training loss: 1.759070329280803, current learning rate 7.054655870445345e-06
+val loss: 187.6685465581977
+accuracy:      0.848
+precision:     0.764
+recall:        0.714
+f1:            0.738
+===== Start training: epoch 5 =====
+Timing: 90.37494206428528, Epoch: 5, training loss: 1.022239268568228, current learning rate 5.1417004048583e-06
+val loss: 193.58331651664048
+accuracy:      0.850
+precision:     0.751
+recall:        0.748
+f1:            0.750
+===== Start training: epoch 6 =====
+Timing: 97.26192617416382, Epoch: 6, training loss: 4.612977264361689, current learning rate 3.087044534412956e-06
+val loss: 189.78313865404925
+accuracy:      0.855
+precision:     0.762
+recall:        0.751
+f1:            0.756
+===== Start training: epoch 7 =====
+Timing: 97.29989099502563, Epoch: 7, training loss: 2.899654909298988, current learning rate 1.0323886639676114e-06
+val loss: 189.3515147179569
+accuracy:      0.857
+precision:     0.763
+recall:        0.761
+f1:            0.762
